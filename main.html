@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>My First Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur aperiam voluptatem commodi corrupti quaerat temporibus iste debitis harum. Ipsa sequi mollitia minus corrupti officia.</p>
+        </main>
+        <aside>
+            <input type="text">
+            <button>Buscar</button>
+            <button onclick="cambiarColor()">Cambiar Color</button>
+        </aside>
+        <footer>
+            <p>Pie de pagina 2024</p>
+        </footer>
+        <script>
+        
+            function cambiarColor(){
+                console.log('---')
+                var x = document.querySelector("body");
+                var colores = ["#ff5733", "#ffffff", "#ffef33"];
+                var colorAleatorio = colores[Math.floor(Math.random() * colores.length)]
+                x.style.backgroundColor = colorAleatorio;
+            }
+
+        </script>
+        <script src="./js/script.js"></script>
+    </div>
+    
+</body>
+</html>
